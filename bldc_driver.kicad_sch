@@ -981,41 +981,6 @@
         )
       )
     )
-    (symbol "Mechanical:MountingHole_Pad" (pin_numbers hide) (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "H" (at 0 6.35 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "MountingHole_Pad" (at 0 4.445 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "mounting hole" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Mounting Hole with connection" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "MountingHole*Pad*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "MountingHole_Pad_0_1"
-        (circle (center 0 1.27) (radius 1.27)
-          (stroke (width 1.27) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "MountingHole_Pad_1_1"
-        (pin input line (at 0 -2.54 90) (length 2.54)
-          (name "1" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
     (symbol "Simulation_SPICE:NMOS" (pin_numbers hide) (pin_names (offset 0)) (in_bom yes) (on_board yes)
       (property "Reference" "Q" (at 5.08 1.27 0)
         (effects (font (size 1.27 1.27)) (justify left))
@@ -1762,6 +1727,9 @@
   (junction (at 121.92 157.48) (diameter 0) (color 0 0 0 0)
     (uuid 040b5aff-0d82-469b-be64-90bd4a705fc6)
   )
+  (junction (at 63.5 167.64) (diameter 0) (color 0 0 0 0)
+    (uuid 0b783948-8d1f-4361-9294-13fb74ec3a47)
+  )
   (junction (at 127 66.04) (diameter 0) (color 0 0 0 0)
     (uuid 0f08622b-9f0c-4223-8a77-b64d3c001234)
   )
@@ -1777,17 +1745,8 @@
   (junction (at 142.24 30.48) (diameter 0) (color 0 0 0 0)
     (uuid 191e7a2a-cc65-42bf-b546-99b7efa5f747)
   )
-  (junction (at 111.76 149.86) (diameter 0) (color 0 0 0 0)
-    (uuid 222caf66-666a-409a-9b8b-a39cba2bc5eb)
-  )
-  (junction (at 63.5 162.56) (diameter 0) (color 0 0 0 0)
-    (uuid 2ff51b9a-8a84-4ff5-9137-95e3c13ab30f)
-  )
   (junction (at 38.1 50.8) (diameter 0) (color 0 0 0 0)
     (uuid 369c66a9-ca2b-4081-83f9-bcc01ac2f36a)
-  )
-  (junction (at 76.2 165.1) (diameter 0) (color 0 0 0 0)
-    (uuid 36c734ef-5347-4770-825f-1a92be266510)
   )
   (junction (at 45.72 30.48) (diameter 0) (color 0 0 0 0)
     (uuid 4205b8a0-0a15-4438-ade3-0bf736c3181e)
@@ -1839,6 +1798,9 @@
   )
   (junction (at 50.8 172.72) (diameter 0) (color 0 0 0 0)
     (uuid 91c55b5c-a1d4-4448-aae7-42fa30c842a6)
+  )
+  (junction (at 66.04 167.64) (diameter 0) (color 0 0 0 0)
+    (uuid 921fe5d9-6237-4d93-94fc-dedfb30c0e87)
   )
   (junction (at 40.64 101.6) (diameter 0) (color 0 0 0 0)
     (uuid 9ab4eba3-c87a-4002-a980-aefb4154d693)
@@ -1910,6 +1872,7 @@
   (no_connect (at 88.9 33.02) (uuid 8110ad28-3d2d-4748-9735-7bb340668532))
   (no_connect (at 116.84 86.36) (uuid 9ef1c4b1-35c4-4f66-b749-1741a1965333))
   (no_connect (at 68.58 134.62) (uuid b6dc0559-3e5d-4557-8a72-b3e3ab882c57))
+  (no_connect (at 111.76 149.86) (uuid b8b3d4da-6f02-48a3-b307-8c37f5dcc428))
   (no_connect (at 38.1 149.86) (uuid d77b02fb-9f40-47e1-98e0-cb8237d0af5d))
 
   (wire (pts (xy 38.1 50.8) (xy 60.96 50.8))
@@ -2012,7 +1975,7 @@
     (stroke (width 0) (type default))
     (uuid 169c5fb0-5224-4dba-b10f-5f93e116a075)
   )
-  (wire (pts (xy 63.5 165.1) (xy 63.5 162.56))
+  (wire (pts (xy 63.5 170.18) (xy 63.5 167.64))
     (stroke (width 0) (type default))
     (uuid 18be56e9-15af-4d4a-9ed6-b32a33566524)
   )
@@ -2144,11 +2107,11 @@
     (stroke (width 0) (type default))
     (uuid 3565dcc9-63f1-4ebd-b23f-772e8a321cc3)
   )
-  (wire (pts (xy 60.96 172.72) (xy 60.96 165.1))
+  (wire (pts (xy 60.96 172.72) (xy 60.96 170.18))
     (stroke (width 0) (type default))
     (uuid 35c8ec45-fb47-4ef3-88d7-c4a7aa6a55f6)
   )
-  (wire (pts (xy 55.88 162.56) (xy 55.88 170.18))
+  (wire (pts (xy 55.88 167.64) (xy 55.88 170.18))
     (stroke (width 0) (type default))
     (uuid 3852990b-c939-43c4-ac9e-4cc373f8c6d9)
   )
@@ -2240,10 +2203,6 @@
     (stroke (width 0) (type default))
     (uuid 4d250b4a-fe55-4290-9e93-93724307cb68)
   )
-  (wire (pts (xy 109.22 187.96) (xy 111.76 187.96))
-    (stroke (width 0) (type default))
-    (uuid 4e1b76c6-f1e4-4d4b-baae-43de5abc7b93)
-  )
   (wire (pts (xy 246.38 139.7) (xy 246.38 142.24))
     (stroke (width 0) (type default))
     (uuid 4eaa48bf-bf7b-4b1d-beb3-6e6434712f4e)
@@ -2263,10 +2222,6 @@
   (wire (pts (xy 185.42 111.76) (xy 185.42 114.3))
     (stroke (width 0) (type default))
     (uuid 4ffad6f9-3cdb-4f6f-a91b-0b787f22b8c4)
-  )
-  (wire (pts (xy 111.76 144.78) (xy 111.76 149.86))
-    (stroke (width 0) (type default))
-    (uuid 514eaed7-f8dd-4301-95d6-e296384a8a16)
   )
   (wire (pts (xy 127 73.66) (xy 127 76.2))
     (stroke (width 0) (type default))
@@ -2308,7 +2263,7 @@
     (stroke (width 0) (type default))
     (uuid 5ae86518-c00f-4008-9eb0-8a07a89d7bea)
   )
-  (wire (pts (xy 63.5 162.56) (xy 76.2 162.56))
+  (wire (pts (xy 63.5 167.64) (xy 66.04 167.64))
     (stroke (width 0) (type default))
     (uuid 5d4972ed-2b68-407f-bc3e-8f33a37098b6)
   )
@@ -2388,10 +2343,6 @@
     (stroke (width 0) (type default))
     (uuid 7123b9df-9952-4c11-a766-fc13c6942ecd)
   )
-  (wire (pts (xy 111.76 149.86) (xy 114.3 149.86))
-    (stroke (width 0) (type default))
-    (uuid 716f6988-09d3-44cf-b770-db3db346cbb6)
-  )
   (wire (pts (xy 248.92 55.88) (xy 251.46 55.88))
     (stroke (width 0) (type default))
     (uuid 7183a5fe-fa90-414c-90e9-a3cfe3aa529d)
@@ -2416,14 +2367,6 @@
     (stroke (width 0) (type default))
     (uuid 740f9e7f-4029-40f2-94c4-f4453211a555)
   )
-  (wire (pts (xy 119.38 187.96) (xy 121.92 187.96))
-    (stroke (width 0) (type default))
-    (uuid 74561337-0dca-4399-987e-0de18532849e)
-  )
-  (wire (pts (xy 76.2 162.56) (xy 76.2 165.1))
-    (stroke (width 0) (type default))
-    (uuid 7481774a-5ee9-4c14-ba74-f07a6190c25d)
-  )
   (wire (pts (xy 121.92 17.78) (xy 121.92 20.32))
     (stroke (width 0) (type default))
     (uuid 748f656f-6b35-4f1b-9c29-5628c2ec8046)
@@ -2432,7 +2375,7 @@
     (stroke (width 0) (type default))
     (uuid 7610d99d-2b9a-41d7-b52e-3a2c4d91b0ee)
   )
-  (wire (pts (xy 60.96 165.1) (xy 63.5 165.1))
+  (wire (pts (xy 60.96 170.18) (xy 63.5 170.18))
     (stroke (width 0) (type default))
     (uuid 780c78db-752c-4662-aed7-530c0bc9410d)
   )
@@ -2556,10 +2499,6 @@
     (stroke (width 0) (type default))
     (uuid 99e87004-d3ff-4c19-96a3-42219ebdec73)
   )
-  (wire (pts (xy 66.04 165.1) (xy 68.58 165.1))
-    (stroke (width 0) (type default))
-    (uuid 9a05f66c-ade2-4dae-923f-faf3f7b1c22f)
-  )
   (wire (pts (xy 45.72 30.48) (xy 50.8 30.48))
     (stroke (width 0) (type default))
     (uuid 9c327185-3299-4aed-bfdd-4c4bc43d9129)
@@ -2591,6 +2530,10 @@
   (wire (pts (xy 58.42 83.82) (xy 60.96 83.82))
     (stroke (width 0) (type default))
     (uuid a23f6c05-b6e2-46f6-bee0-32af75e8cb90)
+  )
+  (wire (pts (xy 66.04 172.72) (xy 66.04 167.64))
+    (stroke (width 0) (type default))
+    (uuid a256d807-fd28-4dbe-9e17-9662d0e06acf)
   )
   (wire (pts (xy 58.42 60.96) (xy 60.96 60.96))
     (stroke (width 0) (type default))
@@ -2704,10 +2647,6 @@
     (stroke (width 0) (type default))
     (uuid bc753226-8516-40e2-97c1-f42dbd57df5d)
   )
-  (wire (pts (xy 76.2 165.1) (xy 76.2 177.8))
-    (stroke (width 0) (type default))
-    (uuid bcd924ed-cb28-40ea-8120-a2dda25f6cb6)
-  )
   (wire (pts (xy 139.7 129.54) (xy 142.24 129.54))
     (stroke (width 0) (type default))
     (uuid bda1a79f-793a-45c6-9afc-0d2c071f8138)
@@ -2740,6 +2679,10 @@
     (stroke (width 0) (type default))
     (uuid c512a06e-0a25-4d07-848c-74eb578de69d)
   )
+  (wire (pts (xy 76.2 167.64) (xy 76.2 177.8))
+    (stroke (width 0) (type default))
+    (uuid c56ca539-57dd-4b74-b798-e33d18231c1d)
+  )
   (wire (pts (xy 238.76 139.7) (xy 241.3 139.7))
     (stroke (width 0) (type default))
     (uuid c5cc2e31-ff58-49ac-9bf0-8e914756502d)
@@ -2771,10 +2714,6 @@
   (wire (pts (xy 203.2 101.6) (xy 203.2 104.14))
     (stroke (width 0) (type default))
     (uuid d21dc597-d4c2-462d-8137-9ddf1912e286)
-  )
-  (wire (pts (xy 119.38 139.7) (xy 121.92 139.7))
-    (stroke (width 0) (type default))
-    (uuid d2b09ad9-d527-4228-9af7-c296258bea1a)
   )
   (wire (pts (xy 58.42 78.74) (xy 60.96 78.74))
     (stroke (width 0) (type default))
@@ -2820,13 +2759,13 @@
     (stroke (width 0) (type default))
     (uuid de6ef522-d878-4ec5-a16b-dfd0297f6fa5)
   )
+  (wire (pts (xy 66.04 167.64) (xy 76.2 167.64))
+    (stroke (width 0) (type default))
+    (uuid decc6288-d396-4219-b02c-e8aa3a195049)
+  )
   (wire (pts (xy 185.42 114.3) (xy 195.58 114.3))
     (stroke (width 0) (type default))
     (uuid dfc9ceac-301e-43f8-80a6-e83f4173c7f0)
-  )
-  (wire (pts (xy 119.38 132.08) (xy 121.92 132.08))
-    (stroke (width 0) (type default))
-    (uuid e2dd85e1-75b8-4f37-8d64-1a09e8903b3c)
   )
   (wire (pts (xy 167.64 114.3) (xy 177.8 114.3))
     (stroke (width 0) (type default))
@@ -3047,10 +2986,6 @@
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 1b8fc4f4-9a1e-403a-9bf1-fdcc84520765)
   )
-  (label "USB_POW" (at 109.22 187.96 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid 1c103cd5-a4f2-4b49-9338-58f99ebb2e63)
-  )
   (label "+3V3A" (at 167.64 91.44 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 1c7621d9-2522-4a4b-98d3-c1784e750b5f)
@@ -3095,7 +3030,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 28558d7f-a6f8-4780-89f2-f5eab87dd922)
   )
-  (label "OP1_INP" (at 167.64 102.87 0) (fields_autoplaced)
+  (label "OP3_INP" (at 167.64 102.87 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 2ab4eb13-56bf-4ca2-ae2f-caccc60a608f)
   )
@@ -3151,7 +3086,7 @@
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 4bc97b6c-58fe-4b40-82c4-fd30715484ca)
   )
-  (label "+5V" (at 76.2 162.56 0) (fields_autoplaced)
+  (label "+5V" (at 76.2 167.64 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 4bf62ccc-9d7c-4e37-8cce-b1cacf1421a3)
   )
@@ -3170,10 +3105,6 @@
   (label "HALL_U" (at 139.7 134.62 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 4d22b9fc-4fab-459f-a28c-830a5a30c41d)
-  )
-  (label "+5V" (at 121.92 187.96 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 50435bb9-8a36-4810-a65a-e3b9967df97a)
   )
   (label "GL_V" (at 101.6 109.22 270) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right bottom))
@@ -3211,7 +3142,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 64c0fe08-c527-4244-b3bb-355244346ffb)
   )
-  (label "ADC1_9" (at 243.84 103.124 0) (fields_autoplaced)
+  (label "ADC1_7" (at 243.84 103.124 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 674cb0ce-ebc8-4144-93bc-a487a2107434)
   )
@@ -3251,7 +3182,7 @@
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 810e7048-dee0-4c99-baae-b5a4944dd67e)
   )
-  (label "VDD" (at 165.1 142.24 0) (fields_autoplaced)
+  (label "+3V3" (at 165.1 142.24 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 822534a5-d649-4a9b-beee-d72dfd4aa693)
   )
@@ -3331,10 +3262,6 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid abc84dd2-87af-4c9f-b134-8495f04e5019)
   )
-  (label "USB_POW" (at 111.76 144.78 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid abe3985e-a5c0-4340-8cc9-b6b44b0aab78)
-  )
   (label "V" (at 129.54 73.66 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid aeaf6188-6291-47a5-9864-ef65c3981558)
@@ -3371,7 +3298,7 @@
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid c28a4ddd-f123-410d-a2ea-1c6bc65e56f3)
   )
-  (label "VDD" (at 121.92 17.78 0) (fields_autoplaced)
+  (label "+3V3" (at 121.92 17.78 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid c5c30dae-232f-4369-a2a8-923d34f2370a)
   )
@@ -3443,7 +3370,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid e873e2a9-bece-408c-8e54-ae0f3b724b58)
   )
-  (label "ADC1_7" (at 137.16 30.48 180) (fields_autoplaced)
+  (label "ADC1_9" (at 137.16 30.48 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid ecd99ae2-fd47-4aeb-84f9-008ebe79aeb9)
   )
@@ -3455,7 +3382,7 @@
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid ef27ca51-fdca-4016-9229-9e607c18913d)
   )
-  (label "OP3_INP" (at 203.2 102.87 0) (fields_autoplaced)
+  (label "OP1_INP" (at 203.2 102.87 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid ef986a95-6653-4cb1-9960-c145b021577f)
   )
@@ -3543,7 +3470,7 @@
   (symbol (lib_id "power:GND") (at 213.36 104.14 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 043a7777-4110-42d2-a12f-a7b5d0d84cad)
-    (property "Reference" "#PWR055" (at 213.36 97.79 0)
+    (property "Reference" "#PWR053" (at 213.36 97.79 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 213.36 100.584 0)
@@ -3559,7 +3486,7 @@
     (instances
       (project "bldc_driver"
         (path "/d13f122d-2eb3-430f-8895-252841c18da3"
-          (reference "#PWR055") (unit 1)
+          (reference "#PWR053") (unit 1)
         )
       )
     )
@@ -3670,7 +3597,7 @@
   (symbol (lib_id "Mechanical:MountingHole") (at 187.96 162.56 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 0850fdfc-9c2b-4528-873d-747fb23704dd)
-    (property "Reference" "H4" (at 190.5 161.29 0)
+    (property "Reference" "H2" (at 190.5 161.29 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "MountingHole" (at 190.5 163.83 0)
@@ -3685,7 +3612,7 @@
     (instances
       (project "bldc_driver"
         (path "/d13f122d-2eb3-430f-8895-252841c18da3"
-          (reference "H4") (unit 1)
+          (reference "H2") (unit 1)
         )
       )
     )
@@ -3749,7 +3676,7 @@
   (symbol (lib_id "power:GND") (at 231.14 149.86 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 0b2ee947-0f9c-4a09-87c9-222185462cc0)
-    (property "Reference" "#PWR059" (at 231.14 156.21 0)
+    (property "Reference" "#PWR057" (at 231.14 156.21 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 231.14 154.94 0)
@@ -3765,7 +3692,7 @@
     (instances
       (project "bldc_driver"
         (path "/d13f122d-2eb3-430f-8895-252841c18da3"
-          (reference "#PWR059") (unit 1)
+          (reference "#PWR057") (unit 1)
         )
       )
     )
@@ -3791,6 +3718,30 @@
       (project "bldc_driver"
         (path "/d13f122d-2eb3-430f-8895-252841c18da3"
           (reference "#PWR026") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Mechanical:MountingHole") (at 203.2 162.56 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 14212ac3-6504-4ec9-a2da-1a302012006b)
+    (property "Reference" "H4" (at 205.74 161.29 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "MountingHole" (at 205.74 163.83 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "MountingHole:MountingHole_3.2mm_M3" (at 203.2 162.56 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 203.2 162.56 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (instances
+      (project "bldc_driver"
+        (path "/d13f122d-2eb3-430f-8895-252841c18da3"
+          (reference "H4") (unit 1)
         )
       )
     )
@@ -3882,7 +3833,7 @@
     (property "Value" "Crystal_GND24" (at 43.18 74.168 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Crystal:Crystal_SMD_SeikoEpson_FA238V-4Pin_3.2x2.5mm_HandSoldering" (at 43.18 78.74 0)
+    (property "Footprint" "Crystal:Crystal_SMD_SeikoEpson_FA238V-4Pin_3.2x2.5mm" (at 43.18 78.74 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 43.18 78.74 0)
@@ -3984,7 +3935,7 @@
   (symbol (lib_id "power:GND") (at 121.92 40.64 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1a02da29-d0f1-455d-8511-00f4a0ca784c)
-    (property "Reference" "#PWR036" (at 121.92 46.99 0)
+    (property "Reference" "#PWR034" (at 121.92 46.99 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 121.92 44.196 0)
@@ -4000,7 +3951,7 @@
     (instances
       (project "bldc_driver"
         (path "/d13f122d-2eb3-430f-8895-252841c18da3"
-          (reference "#PWR036") (unit 1)
+          (reference "#PWR034") (unit 1)
         )
       )
     )
@@ -4040,7 +3991,7 @@
     (property "Value" "Conn_01x05_Pin" (at 134.366 143.764 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "Connector_JST:JST_XH_S5B-XH-A_1x05_P2.50mm_Horizontal" (at 147.32 134.62 0)
+    (property "Footprint" "sam:PinHeader_1x05_P1.27mm_Vertical_big" (at 147.32 134.62 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 147.32 134.62 0)
@@ -4089,7 +4040,7 @@
   (symbol (lib_id "power:GND") (at 195.58 104.14 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1feacc6a-06be-4d71-81a1-b38b7cfdf627)
-    (property "Reference" "#PWR054" (at 195.58 97.79 0)
+    (property "Reference" "#PWR052" (at 195.58 97.79 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 195.58 100.584 0)
@@ -4105,7 +4056,7 @@
     (instances
       (project "bldc_driver"
         (path "/d13f122d-2eb3-430f-8895-252841c18da3"
-          (reference "#PWR054") (unit 1)
+          (reference "#PWR052") (unit 1)
         )
       )
     )
@@ -4117,7 +4068,7 @@
     (property "Reference" "R2" (at 67.056 175.26 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "4.32k" (at 67.056 178.054 0)
+    (property "Value" "10k" (at 67.056 178.054 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" (at 64.262 176.53 90)
@@ -4202,7 +4153,7 @@
     (property "Value" "STSPIN32G4" (at 90.17 54.356 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "stspin32g4:QFN50P900X900X100-65N-D" (at 113.03 135.56 0)
+    (property "Footprint" "stspin32g4:QFN50P900X900X100-65N-D-padlong" (at 113.03 135.56 0)
       (effects (font (size 1.27 1.27)) (justify left top) hide)
     )
     (property "Datasheet" "https://www.st.com/resource/en/datasheet/stspin32g4.pdf" (at 113.03 235.56 0)
@@ -4434,7 +4385,7 @@
   (symbol (lib_id "power:GND") (at 261.62 149.86 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 2329fb52-3c59-440e-ae59-f7b6e536f855)
-    (property "Reference" "#PWR069" (at 261.62 156.21 0)
+    (property "Reference" "#PWR067" (at 261.62 156.21 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 261.62 154.94 0)
@@ -4450,7 +4401,7 @@
     (instances
       (project "bldc_driver"
         (path "/d13f122d-2eb3-430f-8895-252841c18da3"
-          (reference "#PWR069") (unit 1)
+          (reference "#PWR067") (unit 1)
         )
       )
     )
@@ -4485,7 +4436,7 @@
   (symbol (lib_id "power:GND") (at 177.8 104.14 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 27ad7994-49a8-4b0d-bb88-0655962aab13)
-    (property "Reference" "#PWR050" (at 177.8 97.79 0)
+    (property "Reference" "#PWR048" (at 177.8 97.79 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 177.8 100.584 0)
@@ -4501,7 +4452,7 @@
     (instances
       (project "bldc_driver"
         (path "/d13f122d-2eb3-430f-8895-252841c18da3"
-          (reference "#PWR050") (unit 1)
+          (reference "#PWR048") (unit 1)
         )
       )
     )
@@ -4620,7 +4571,7 @@
   (symbol (lib_id "power:GND") (at 246.38 149.86 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 2e6af646-f346-4fa4-986b-54448d672fba)
-    (property "Reference" "#PWR064" (at 246.38 156.21 0)
+    (property "Reference" "#PWR062" (at 246.38 156.21 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 246.38 154.94 0)
@@ -4636,7 +4587,7 @@
     (instances
       (project "bldc_driver"
         (path "/d13f122d-2eb3-430f-8895-252841c18da3"
-          (reference "#PWR064") (unit 1)
+          (reference "#PWR062") (unit 1)
         )
       )
     )
@@ -4668,35 +4619,10 @@
     )
   )
 
-  (symbol (lib_id "Mechanical:MountingHole_Pad") (at 124.46 132.08 270) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 31f68662-bf83-4af0-aed4-422ee09aad0a)
-    (property "Reference" "H1" (at 128.27 130.81 90)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "MountingHole_Pad" (at 128.27 133.35 90)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Footprint" "MountingHole:MountingHole_2.5mm_Pad_TopBottom" (at 124.46 132.08 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 124.46 132.08 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid f8797e39-e9dc-421e-9937-8d6521765b88))
-    (instances
-      (project "bldc_driver"
-        (path "/d13f122d-2eb3-430f-8895-252841c18da3"
-          (reference "H1") (unit 1)
-        )
-      )
-    )
-  )
-
   (symbol (lib_id "power:GND") (at 137.16 99.06 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 32613d19-18a9-49de-ba03-8a9f463671b2)
-    (property "Reference" "#PWR041" (at 137.16 105.41 0)
+    (property "Reference" "#PWR039" (at 137.16 105.41 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 137.16 102.616 0)
@@ -4712,7 +4638,7 @@
     (instances
       (project "bldc_driver"
         (path "/d13f122d-2eb3-430f-8895-252841c18da3"
-          (reference "#PWR041") (unit 1)
+          (reference "#PWR039") (unit 1)
         )
       )
     )
@@ -4892,7 +4818,7 @@
   (symbol (lib_id "power:GND") (at 233.68 111.76 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 3e385148-d7bc-403f-b3d6-8c01db1732de)
-    (property "Reference" "#PWR060" (at 233.68 118.11 0)
+    (property "Reference" "#PWR058" (at 233.68 118.11 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 233.68 115.316 0)
@@ -4908,7 +4834,7 @@
     (instances
       (project "bldc_driver"
         (path "/d13f122d-2eb3-430f-8895-252841c18da3"
-          (reference "#PWR060") (unit 1)
+          (reference "#PWR058") (unit 1)
         )
       )
     )
@@ -4947,7 +4873,7 @@
   (symbol (lib_id "power:GND") (at 254 149.86 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 413aecc0-c761-47a9-85f7-6641f020cb14)
-    (property "Reference" "#PWR066" (at 254 156.21 0)
+    (property "Reference" "#PWR064" (at 254 156.21 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 254 154.94 0)
@@ -4963,7 +4889,7 @@
     (instances
       (project "bldc_driver"
         (path "/d13f122d-2eb3-430f-8895-252841c18da3"
-          (reference "#PWR066") (unit 1)
+          (reference "#PWR064") (unit 1)
         )
       )
     )
@@ -5012,7 +4938,7 @@
       )
       (project "bldc_driver"
         (path "/d13f122d-2eb3-430f-8895-252841c18da3"
-          (reference "#PWR038") (unit 1)
+          (reference "#PWR036") (unit 1)
         )
       )
       (project "Boards.memory_md(RR)"
@@ -5026,7 +4952,7 @@
   (symbol (lib_id "power:GND") (at 137.16 68.58 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 42a212f5-2b61-41ed-8746-eaddcfcfd3a0)
-    (property "Reference" "#PWR040" (at 137.16 74.93 0)
+    (property "Reference" "#PWR038" (at 137.16 74.93 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 137.16 72.136 0)
@@ -5042,7 +4968,7 @@
     (instances
       (project "bldc_driver"
         (path "/d13f122d-2eb3-430f-8895-252841c18da3"
-          (reference "#PWR040") (unit 1)
+          (reference "#PWR038") (unit 1)
         )
       )
     )
@@ -5158,7 +5084,7 @@
   (symbol (lib_id "Mechanical:MountingHole") (at 195.58 162.56 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 47da2af8-c0b9-4740-b582-31ebacb5add0)
-    (property "Reference" "H5" (at 198.12 161.29 0)
+    (property "Reference" "H3" (at 198.12 161.29 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "MountingHole" (at 198.12 163.83 0)
@@ -5173,7 +5099,7 @@
     (instances
       (project "bldc_driver"
         (path "/d13f122d-2eb3-430f-8895-252841c18da3"
-          (reference "H5") (unit 1)
+          (reference "H3") (unit 1)
         )
       )
     )
@@ -5390,7 +5316,7 @@
   (symbol (lib_id "power:GND") (at 147.32 68.58 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4e4f46e5-d5d3-4c20-bc36-f770a09e497b)
-    (property "Reference" "#PWR045" (at 147.32 74.93 0)
+    (property "Reference" "#PWR043" (at 147.32 74.93 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 147.32 72.136 0)
@@ -5406,7 +5332,7 @@
     (instances
       (project "bldc_driver"
         (path "/d13f122d-2eb3-430f-8895-252841c18da3"
-          (reference "#PWR045") (unit 1)
+          (reference "#PWR043") (unit 1)
         )
       )
     )
@@ -5415,7 +5341,7 @@
   (symbol (lib_id "power:GND") (at 259.08 76.2 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4ebb146c-fd80-4c15-9b35-07d0b0f00457)
-    (property "Reference" "#PWR068" (at 259.08 82.55 0)
+    (property "Reference" "#PWR066" (at 259.08 82.55 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 259.08 79.756 0)
@@ -5431,7 +5357,7 @@
     (instances
       (project "bldc_driver"
         (path "/d13f122d-2eb3-430f-8895-252841c18da3"
-          (reference "#PWR068") (unit 1)
+          (reference "#PWR066") (unit 1)
         )
       )
     )
@@ -5440,7 +5366,7 @@
   (symbol (lib_id "power:+48V") (at 187.96 30.48 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 50104c4c-ca7d-487a-8081-b2868e047a6a)
-    (property "Reference" "#PWR051" (at 187.96 34.29 0)
+    (property "Reference" "#PWR049" (at 187.96 34.29 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+48V" (at 187.96 25.4 0)
@@ -5456,7 +5382,7 @@
     (instances
       (project "bldc_driver"
         (path "/d13f122d-2eb3-430f-8895-252841c18da3"
-          (reference "#PWR051") (unit 1)
+          (reference "#PWR049") (unit 1)
         )
       )
     )
@@ -5583,7 +5509,7 @@
   (symbol (lib_id "power:+48V") (at 142.24 20.32 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5a31dd15-0491-44f9-a987-c45e33d9ef39)
-    (property "Reference" "#PWR043" (at 142.24 24.13 0)
+    (property "Reference" "#PWR041" (at 142.24 24.13 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+48V" (at 142.24 16.764 0)
@@ -5599,7 +5525,7 @@
     (instances
       (project "bldc_driver"
         (path "/d13f122d-2eb3-430f-8895-252841c18da3"
-          (reference "#PWR043") (unit 1)
+          (reference "#PWR041") (unit 1)
         )
       )
     )
@@ -5710,7 +5636,7 @@
   (symbol (lib_id "power:+48V") (at 223.52 30.48 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 664d4114-3bb8-4c71-b0d3-d19a4bc61bf4)
-    (property "Reference" "#PWR056" (at 223.52 34.29 0)
+    (property "Reference" "#PWR054" (at 223.52 34.29 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+48V" (at 223.52 25.4 0)
@@ -5726,7 +5652,7 @@
     (instances
       (project "bldc_driver"
         (path "/d13f122d-2eb3-430f-8895-252841c18da3"
-          (reference "#PWR056") (unit 1)
+          (reference "#PWR054") (unit 1)
         )
       )
     )
@@ -5784,71 +5710,10 @@
     )
   )
 
-  (symbol (lib_id "Device:D") (at 115.57 187.96 180) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 6b88f447-9e5f-4a2b-9a49-787121700e33)
-    (property "Reference" "D202" (at 121.158 189.992 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "MS110F" (at 113.284 189.992 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "bdm:MS110F" (at 115.57 187.96 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 115.57 187.96 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Sim.Device" "D" (at 115.57 187.96 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Sim.Pins" "1=K 2=A" (at 115.57 187.96 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "2" (uuid 206ac686-2a22-4579-8364-2a93fc6626e4))
-    (pin "1" (uuid 6cd499da-a307-45f9-954a-7d4171ff4a0b))
-    (instances
-      (project "bldc"
-        (path "/9223f483-a6f3-479d-bc99-e6ab8972067e"
-          (reference "D202") (unit 1)
-        )
-      )
-      (project "bldc_test"
-        (path "/b3007851-5663-4740-839f-bad4ce2961ba"
-          (reference "D3") (unit 1)
-        )
-      )
-      (project "drone"
-        (path "/c8eb52dc-cd6b-4c41-a432-da0b26b658b9/c4382cd0-54c8-46f2-924c-3379d0202b72"
-          (reference "D202") (unit 1)
-        )
-        (path "/c8eb52dc-cd6b-4c41-a432-da0b26b658b9/a78efc51-a088-4c7c-950d-8ffef5ebd8c5"
-          (reference "D302") (unit 1)
-        )
-        (path "/c8eb52dc-cd6b-4c41-a432-da0b26b658b9/41b95735-c584-4d99-a5cf-4ca69cba3514"
-          (reference "D402") (unit 1)
-        )
-        (path "/c8eb52dc-cd6b-4c41-a432-da0b26b658b9/54b37a5a-ac7a-474f-96cf-add5d7dd5428"
-          (reference "D502") (unit 1)
-        )
-      )
-      (project "bldc_driver"
-        (path "/d13f122d-2eb3-430f-8895-252841c18da3"
-          (reference "D3") (unit 1)
-        )
-      )
-      (project "Boards.memory_md(RR)"
-        (path "/ffde0957-e448-46f8-a255-5b9898bf9623"
-          (reference "D12") (unit 1)
-        )
-      )
-    )
-  )
-
   (symbol (lib_id "power:GND") (at 187.96 76.2 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 6bef4954-7e31-464b-a4f6-e228dbab755d)
-    (property "Reference" "#PWR052" (at 187.96 82.55 0)
+    (property "Reference" "#PWR050" (at 187.96 82.55 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 187.96 79.756 0)
@@ -5864,7 +5729,7 @@
     (instances
       (project "bldc_driver"
         (path "/d13f122d-2eb3-430f-8895-252841c18da3"
-          (reference "#PWR052") (unit 1)
+          (reference "#PWR050") (unit 1)
         )
       )
     )
@@ -6049,7 +5914,7 @@
   (symbol (lib_id "Device:R") (at 203.2 142.24 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 74a8f6ee-f1e3-43bc-9724-04fe505d2dfe)
-    (property "Reference" "R26" (at 205.74 140.97 0)
+    (property "Reference" "R4" (at 205.74 140.97 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "120" (at 205.74 143.51 0)
@@ -6066,7 +5931,7 @@
     (instances
       (project "bldc_driver"
         (path "/d13f122d-2eb3-430f-8895-252841c18da3"
-          (reference "R26") (unit 1)
+          (reference "R4") (unit 1)
         )
       )
     )
@@ -6133,7 +5998,7 @@
     (property "Value" "ST-Link" (at 135.89 166.116 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical" (at 134.62 175.26 0)
+    (property "Footprint" "sam:PinHeader_2x05_P1.27mm_Vertical_big" (at 134.62 175.26 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 134.62 175.26 0)
@@ -6172,7 +6037,7 @@
     (property "Value" "Conn_01x02_Pin" (at 95.25 136.144 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "Connector_JST:JST_XH_S2B-XH-A-1_1x02_P2.50mm_Horizontal" (at 99.06 134.62 0)
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" (at 99.06 134.62 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 99.06 134.62 0)
@@ -6324,7 +6189,7 @@
   (symbol (lib_id "power:GND") (at 223.52 149.86 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 7ff0fb40-23ee-49ac-9f0d-270f6e823207)
-    (property "Reference" "#PWR058" (at 223.52 156.21 0)
+    (property "Reference" "#PWR056" (at 223.52 156.21 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 223.52 154.94 0)
@@ -6340,32 +6205,7 @@
     (instances
       (project "bldc_driver"
         (path "/d13f122d-2eb3-430f-8895-252841c18da3"
-          (reference "#PWR058") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Mechanical:MountingHole_Pad") (at 124.46 139.7 270) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 82115413-7d20-401e-9fe9-6eb86c398b0d)
-    (property "Reference" "H2" (at 128.27 138.43 90)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "MountingHole_Pad" (at 128.27 140.97 90)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Footprint" "MountingHole:MountingHole_2.5mm_Pad_TopBottom" (at 124.46 139.7 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 124.46 139.7 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 531d3476-06d6-4114-89b8-7549e317518f))
-    (instances
-      (project "bldc_driver"
-        (path "/d13f122d-2eb3-430f-8895-252841c18da3"
-          (reference "H2") (unit 1)
+          (reference "#PWR056") (unit 1)
         )
       )
     )
@@ -6619,37 +6459,6 @@
     )
   )
 
-  (symbol (lib_id "Device:R") (at 72.39 165.1 270) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 9184ab71-635f-4f01-b845-67e6b31e73ed)
-    (property "Reference" "R4" (at 71.12 167.132 90)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "4.32k" (at 70.104 165.1 90)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" (at 72.39 163.322 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 72.39 165.1 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "2" (uuid 165b55d3-3731-4cbe-9904-ecd23c7aa9cd))
-    (pin "1" (uuid 763fe03b-a4d7-4254-82c6-61c7129125e3))
-    (instances
-      (project "bldc_driver"
-        (path "/d13f122d-2eb3-430f-8895-252841c18da3"
-          (reference "R4") (unit 1)
-        )
-      )
-      (project "Boards.memory_md(RR)"
-        (path "/ffde0957-e448-46f8-a255-5b9898bf9623"
-          (reference "R4") (unit 1)
-        )
-      )
-    )
-  )
-
   (symbol (lib_id "power:PWR_FLAG") (at 160.02 182.88 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 91dff9b4-01be-4c84-8d01-ce4b756a8a5a)
@@ -6821,7 +6630,7 @@
       )
       (project "bldc_driver"
         (path "/d13f122d-2eb3-430f-8895-252841c18da3"
-          (reference "#PWR053") (unit 1)
+          (reference "#PWR051") (unit 1)
         )
       )
       (project "Boards.memory_md(RR)"
@@ -6871,7 +6680,7 @@
   (symbol (lib_id "power:+48V") (at 259.08 30.48 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 9e60f701-db8c-4fb9-bcde-25a93355df80)
-    (property "Reference" "#PWR067" (at 259.08 34.29 0)
+    (property "Reference" "#PWR065" (at 259.08 34.29 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+48V" (at 259.08 25.4 0)
@@ -6887,7 +6696,7 @@
     (instances
       (project "bldc_driver"
         (path "/d13f122d-2eb3-430f-8895-252841c18da3"
-          (reference "#PWR067") (unit 1)
+          (reference "#PWR065") (unit 1)
         )
       )
     )
@@ -6919,19 +6728,19 @@
     )
   )
 
-  (symbol (lib_id "Device:L") (at 59.69 162.56 90) (unit 1)
+  (symbol (lib_id "Device:L") (at 59.69 167.64 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a0e5f85e-b4bf-4dfd-b267-1308cf62e31d)
-    (property "Reference" "L3" (at 54.356 161.544 90)
+    (property "Reference" "L3" (at 54.356 166.624 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "33u" (at 59.69 163.83 90)
+    (property "Value" "33u" (at 59.69 168.91 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "sam:ELL6SH330M" (at 59.69 162.56 0)
+    (property "Footprint" "sam:ELL6SH330M" (at 59.69 167.64 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 59.69 162.56 0)
+    (property "Datasheet" "~" (at 59.69 167.64 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 4504a23c-a224-4713-b65d-9db2a7ee1bbc))
@@ -7030,7 +6839,7 @@
   (symbol (lib_id "power:+48V") (at 241.3 137.16 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a49285fd-fdad-447f-b663-b28ea45d642a)
-    (property "Reference" "#PWR062" (at 241.3 140.97 0)
+    (property "Reference" "#PWR060" (at 241.3 140.97 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+48V" (at 241.3 132.08 0)
@@ -7046,7 +6855,7 @@
     (instances
       (project "bldc_driver"
         (path "/d13f122d-2eb3-430f-8895-252841c18da3"
-          (reference "#PWR062") (unit 1)
+          (reference "#PWR060") (unit 1)
         )
       )
     )
@@ -7098,60 +6907,6 @@
       (project "bldc_driver"
         (path "/d13f122d-2eb3-430f-8895-252841c18da3"
           (reference "#PWR04") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 119.38 139.7 270) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid aa9cc869-788e-4116-8de3-1b0eb948f0a0)
-    (property "Reference" "#PWR0218" (at 113.03 139.7 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 114.554 139.7 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 119.38 139.7 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 119.38 139.7 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 7d22ea3b-ab22-4eba-aed4-ec444b49a877))
-    (instances
-      (project "bldc"
-        (path "/9223f483-a6f3-479d-bc99-e6ab8972067e"
-          (reference "#PWR0218") (unit 1)
-        )
-      )
-      (project "bldc_test"
-        (path "/b3007851-5663-4740-839f-bad4ce2961ba"
-          (reference "#PWR020") (unit 1)
-        )
-      )
-      (project "drone"
-        (path "/c8eb52dc-cd6b-4c41-a432-da0b26b658b9/c4382cd0-54c8-46f2-924c-3379d0202b72"
-          (reference "#PWR0218") (unit 1)
-        )
-        (path "/c8eb52dc-cd6b-4c41-a432-da0b26b658b9/a78efc51-a088-4c7c-950d-8ffef5ebd8c5"
-          (reference "#PWR0318") (unit 1)
-        )
-        (path "/c8eb52dc-cd6b-4c41-a432-da0b26b658b9/41b95735-c584-4d99-a5cf-4ca69cba3514"
-          (reference "#PWR0418") (unit 1)
-        )
-        (path "/c8eb52dc-cd6b-4c41-a432-da0b26b658b9/54b37a5a-ac7a-474f-96cf-add5d7dd5428"
-          (reference "#PWR0518") (unit 1)
-        )
-      )
-      (project "bldc_driver"
-        (path "/d13f122d-2eb3-430f-8895-252841c18da3"
-          (reference "#PWR035") (unit 1)
-        )
-      )
-      (project "Boards.memory_md(RR)"
-        (path "/ffde0957-e448-46f8-a255-5b9898bf9623"
-          (reference "#PWR042") (unit 1)
         )
       )
     )
@@ -7316,60 +7071,6 @@
     )
   )
 
-  (symbol (lib_id "power:GND") (at 121.92 149.86 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid b85bbaae-9e32-4942-99b6-02a9e1fe3433)
-    (property "Reference" "#PWR0218" (at 128.27 149.86 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 125.984 149.86 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 121.92 149.86 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 121.92 149.86 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid d1464aae-7799-4271-9e97-510c00824854))
-    (instances
-      (project "bldc"
-        (path "/9223f483-a6f3-479d-bc99-e6ab8972067e"
-          (reference "#PWR0218") (unit 1)
-        )
-      )
-      (project "bldc_test"
-        (path "/b3007851-5663-4740-839f-bad4ce2961ba"
-          (reference "#PWR022") (unit 1)
-        )
-      )
-      (project "drone"
-        (path "/c8eb52dc-cd6b-4c41-a432-da0b26b658b9/c4382cd0-54c8-46f2-924c-3379d0202b72"
-          (reference "#PWR0218") (unit 1)
-        )
-        (path "/c8eb52dc-cd6b-4c41-a432-da0b26b658b9/a78efc51-a088-4c7c-950d-8ffef5ebd8c5"
-          (reference "#PWR0318") (unit 1)
-        )
-        (path "/c8eb52dc-cd6b-4c41-a432-da0b26b658b9/41b95735-c584-4d99-a5cf-4ca69cba3514"
-          (reference "#PWR0418") (unit 1)
-        )
-        (path "/c8eb52dc-cd6b-4c41-a432-da0b26b658b9/54b37a5a-ac7a-474f-96cf-add5d7dd5428"
-          (reference "#PWR0518") (unit 1)
-        )
-      )
-      (project "bldc_driver"
-        (path "/d13f122d-2eb3-430f-8895-252841c18da3"
-          (reference "#PWR037") (unit 1)
-        )
-      )
-      (project "Boards.memory_md(RR)"
-        (path "/ffde0957-e448-46f8-a255-5b9898bf9623"
-          (reference "#PWR047") (unit 1)
-        )
-      )
-    )
-  )
-
   (symbol (lib_id "Device:R") (at 121.92 24.13 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b89e22a6-357f-4fd7-a6ef-d0538ccd2a09)
@@ -7425,7 +7126,7 @@
   (symbol (lib_id "power:GND") (at 223.52 76.2 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b9f8a430-4acb-430f-99b6-202a4635f842)
-    (property "Reference" "#PWR057" (at 223.52 82.55 0)
+    (property "Reference" "#PWR055" (at 223.52 82.55 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 223.52 79.756 0)
@@ -7441,7 +7142,7 @@
     (instances
       (project "bldc_driver"
         (path "/d13f122d-2eb3-430f-8895-252841c18da3"
-          (reference "#PWR057") (unit 1)
+          (reference "#PWR055") (unit 1)
         )
       )
     )
@@ -7486,7 +7187,7 @@
   (symbol (lib_id "power:GND") (at 142.24 40.64 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid bd5f550f-85a7-41ac-9385-0887bd0e17d1)
-    (property "Reference" "#PWR044" (at 142.24 46.99 0)
+    (property "Reference" "#PWR042" (at 142.24 46.99 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 142.24 44.45 0)
@@ -7502,7 +7203,7 @@
     (instances
       (project "bldc_driver"
         (path "/d13f122d-2eb3-430f-8895-252841c18da3"
-          (reference "#PWR044") (unit 1)
+          (reference "#PWR042") (unit 1)
         )
       )
     )
@@ -7614,7 +7315,7 @@
   (symbol (lib_id "power:GND") (at 254 111.76 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c4e997ac-5991-4353-9be7-e782895a1f28)
-    (property "Reference" "#PWR065" (at 254 118.11 0)
+    (property "Reference" "#PWR063" (at 254 118.11 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 254 115.316 0)
@@ -7630,38 +7331,7 @@
     (instances
       (project "bldc_driver"
         (path "/d13f122d-2eb3-430f-8895-252841c18da3"
-          (reference "#PWR065") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:R") (at 66.04 168.91 180) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid c57b4036-4d8a-4e96-8e14-f1c522f1df88)
-    (property "Reference" "R1" (at 69.596 167.386 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "4.32k" (at 69.596 170.688 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" (at 67.818 168.91 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 66.04 168.91 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "2" (uuid e89ee0f9-9fdd-41a1-90ea-5d4fc4b01f2f))
-    (pin "1" (uuid 7e181032-2e5f-46b2-be16-4da1ab358bed))
-    (instances
-      (project "bldc_driver"
-        (path "/d13f122d-2eb3-430f-8895-252841c18da3"
-          (reference "R1") (unit 1)
-        )
-      )
-      (project "Boards.memory_md(RR)"
-        (path "/ffde0957-e448-46f8-a255-5b9898bf9623"
-          (reference "R1") (unit 1)
+          (reference "#PWR063") (unit 1)
         )
       )
     )
@@ -7696,7 +7366,7 @@
   (symbol (lib_id "power:+48V") (at 160.02 167.64 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ca7fcf2d-e9bc-46ac-8b45-42dd2b31903c)
-    (property "Reference" "#PWR047" (at 160.02 171.45 0)
+    (property "Reference" "#PWR045" (at 160.02 171.45 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+48V" (at 160.02 164.084 0)
@@ -7712,7 +7382,7 @@
     (instances
       (project "bldc_driver"
         (path "/d13f122d-2eb3-430f-8895-252841c18da3"
-          (reference "#PWR047") (unit 1)
+          (reference "#PWR045") (unit 1)
         )
       )
     )
@@ -7888,7 +7558,7 @@
       )
       (project "bldc_driver"
         (path "/d13f122d-2eb3-430f-8895-252841c18da3"
-          (reference "#PWR039") (unit 1)
+          (reference "#PWR037") (unit 1)
         )
       )
       (project "Boards.memory_md"
@@ -8021,7 +7691,7 @@
       )
       (project "bldc_driver"
         (path "/d13f122d-2eb3-430f-8895-252841c18da3"
-          (reference "#PWR048") (unit 1)
+          (reference "#PWR046") (unit 1)
         )
       )
       (project "Boards.memory_md(RR)"
@@ -8061,7 +7731,7 @@
   (symbol (lib_id "power:GND") (at 238.76 149.86 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d99c2ff4-07e7-4fc8-9f65-84575c88a87d)
-    (property "Reference" "#PWR061" (at 238.76 156.21 0)
+    (property "Reference" "#PWR059" (at 238.76 156.21 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 238.76 154.94 0)
@@ -8077,32 +7747,7 @@
     (instances
       (project "bldc_driver"
         (path "/d13f122d-2eb3-430f-8895-252841c18da3"
-          (reference "#PWR061") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:+48V") (at 119.38 132.08 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid deeb3302-d290-42bc-90c2-4a5d32a40b92)
-    (property "Reference" "#PWR034" (at 123.19 132.08 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+48V" (at 116.586 132.08 90)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "" (at 119.38 132.08 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 119.38 132.08 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 2adff036-6f35-41ba-b43c-e27c44504871))
-    (instances
-      (project "bldc_driver"
-        (path "/d13f122d-2eb3-430f-8895-252841c18da3"
-          (reference "#PWR034") (unit 1)
+          (reference "#PWR059") (unit 1)
         )
       )
     )
@@ -8233,7 +7878,7 @@
       )
       (project "bldc_driver"
         (path "/d13f122d-2eb3-430f-8895-252841c18da3"
-          (reference "#PWR042") (unit 1)
+          (reference "#PWR040") (unit 1)
         )
       )
       (project "Boards.memory_md(RR)"
@@ -8247,7 +7892,7 @@
   (symbol (lib_id "Mechanical:MountingHole") (at 180.34 162.56 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e548727d-d218-4bf7-b32c-4889ae65c583)
-    (property "Reference" "H3" (at 182.88 161.29 0)
+    (property "Reference" "H1" (at 182.88 161.29 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "MountingHole" (at 182.88 163.83 0)
@@ -8262,7 +7907,7 @@
     (instances
       (project "bldc_driver"
         (path "/d13f122d-2eb3-430f-8895-252841c18da3"
-          (reference "H3") (unit 1)
+          (reference "H1") (unit 1)
         )
       )
     )
@@ -8388,7 +8033,7 @@
       )
       (project "bldc_driver"
         (path "/d13f122d-2eb3-430f-8895-252841c18da3"
-          (reference "#PWR049") (unit 1)
+          (reference "#PWR047") (unit 1)
         )
       )
       (project "Boards.memory_md(RR)"
@@ -8480,7 +8125,7 @@
   (symbol (lib_id "power:GND") (at 147.32 99.06 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f4367d34-c844-44c3-a006-92abca6bd52c)
-    (property "Reference" "#PWR046" (at 147.32 105.41 0)
+    (property "Reference" "#PWR044" (at 147.32 105.41 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 147.32 102.616 0)
@@ -8496,7 +8141,7 @@
     (instances
       (project "bldc_driver"
         (path "/d13f122d-2eb3-430f-8895-252841c18da3"
-          (reference "#PWR046") (unit 1)
+          (reference "#PWR044") (unit 1)
         )
       )
     )
@@ -8637,7 +8282,7 @@
   (symbol (lib_id "power:GND") (at 243.84 111.76 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid fdf36299-7e84-493f-8d45-00f8a0e6392f)
-    (property "Reference" "#PWR063" (at 243.84 118.11 0)
+    (property "Reference" "#PWR061" (at 243.84 118.11 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 243.84 115.316 0)
@@ -8653,62 +8298,7 @@
     (instances
       (project "bldc_driver"
         (path "/d13f122d-2eb3-430f-8895-252841c18da3"
-          (reference "#PWR063") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:C") (at 118.11 149.86 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid ff9f1cbf-526e-4e0b-bec0-3c52b645496f)
-    (property "Reference" "C206" (at 115.57 149.86 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "0.1u" (at 120.65 149.86 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" (at 121.92 148.8948 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 118.11 149.86 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "2" (uuid 05a885b4-34f7-478a-8020-71a54a73e692))
-    (pin "1" (uuid c50074c3-af11-4bd0-b445-eb7705761ef3))
-    (instances
-      (project "bldc"
-        (path "/9223f483-a6f3-479d-bc99-e6ab8972067e"
-          (reference "C206") (unit 1)
-        )
-      )
-      (project "bldc_test"
-        (path "/b3007851-5663-4740-839f-bad4ce2961ba"
-          (reference "C13") (unit 1)
-        )
-      )
-      (project "drone"
-        (path "/c8eb52dc-cd6b-4c41-a432-da0b26b658b9/c4382cd0-54c8-46f2-924c-3379d0202b72"
-          (reference "C206") (unit 1)
-        )
-        (path "/c8eb52dc-cd6b-4c41-a432-da0b26b658b9/a78efc51-a088-4c7c-950d-8ffef5ebd8c5"
-          (reference "C306") (unit 1)
-        )
-        (path "/c8eb52dc-cd6b-4c41-a432-da0b26b658b9/41b95735-c584-4d99-a5cf-4ca69cba3514"
-          (reference "C406") (unit 1)
-        )
-        (path "/c8eb52dc-cd6b-4c41-a432-da0b26b658b9/54b37a5a-ac7a-474f-96cf-add5d7dd5428"
-          (reference "C506") (unit 1)
-        )
-      )
-      (project "bldc_driver"
-        (path "/d13f122d-2eb3-430f-8895-252841c18da3"
-          (reference "C18") (unit 1)
-        )
-      )
-      (project "Boards.memory_md(RR)"
-        (path "/ffde0957-e448-46f8-a255-5b9898bf9623"
-          (reference "C27") (unit 1)
+          (reference "#PWR061") (unit 1)
         )
       )
     )
